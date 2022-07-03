@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM PM Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body class="body">
+    <div class="container" id="container">
+        <div class="clock-header">
+            <span class="weekday" id="Sunday">Sunday</span>
+            <span class="weekday" id="Monday">Monday</span>
+            <span class="weekday" id="Tuesday">Tuesday</span>
+            <span class="weekday" id="Wednesday">Wednesday</span>
+            <span class="weekday" id="Thursday">Thursday</span>
+            <span class="weekday" id="Friday">Friday</span>
+            <span class="weekday" id="Saturday">Saturday</span>
+        </div>
+        <div class="clock-body" id="clock-body">
+            <span class="now12" id="now12"></span>
+        </div>
+        <div class="am-pm" id="am-pm">
+            <button class="twelve" id="twelve">12 Hour</button>
+            <button class="twoFour" id="two-four">24 Hour</button>
+        </div>
+    </div>
+
+    <button class="dark-mode" id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
+
+</body>
+</html>

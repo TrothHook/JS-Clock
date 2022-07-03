@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Poppins&family=Muli&family=Roboto&display=swap");
+@import url("https://allfont.net/allfont.css?fonts=agency-fb");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Agency FB", arial;
+  background: #f953c6;
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+  background: linear-gradient(to right, #b91d73, #f953c6);
+  color: rebeccapurple;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+
+.body.dark {
+  background: #191919;
+  color: #8A8A8A;
+}
+
+.container {
+  height: 400px;
+  width: 800px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.456);
+  border-radius: 5px;
+}
+
+.clock-header {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+.weekday.active {
+  color: #fff;
+  transition: color 0.2s linear;
+}
+
+.weekday.active.dark {
+  color: #00FF97;
+}
+
+.clock-body {
+  height: 140px;
+  width: 100%;
+  font-size: 8rem;
+  text-align: center;
+  font-family: inherit;
+  margin: 1rem 0;
+  color: #fff;
+  transition: color 0.2s linear;
+}
+
+.clock-body.dark  {
+  color: #00FF97;
+}
+
+.am-pm {
+  height: 30px;
+  width: 400px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: absolute;
+  left: 25%;
+}
+
+.am-pm button {
+  background-color: transparent;
+  color: rebeccapurple;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s linear;
+}
+
+.am-pm.dark button {
+  color: #8A8A8A;
+}
+
+.twelve.active {
+  color: #fff;
+  transition: color 0.2s linear;
+}
+
+.twelve.active.dark {
+  color: #00FF97;
+}
+
+.twoFour.active {
+  color: #fff;
+  transition: color 0.2s linear;
+}
+
+.twoFour.active.dark {
+  color: #00FF97;
+}
+
+.dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.dark-mode.dark {
+  color: #fff;
+}
